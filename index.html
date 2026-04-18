@@ -90,11 +90,24 @@ footer{border-top:1px solid var(--border);padding:28px 40px;display:flex;align-i
   .hero{padding:110px 20px 60px}
   .section{padding:0 20px 60px}
   .projects-grid{grid-template-columns:1fr}
+
   .proj-card.featured{grid-column:span 1}
   .about-grid{grid-template-columns:1fr}
   .contact-card{padding:32px}
   footer{flex-direction:column;gap:8px;text-align:center;padding:24px 20px}
 }
+
+.edu-row{display:flex;align-items:center;gap:16px;padding:16px 24px;border-bottom:1px solid var(--border)}
+.edu-row:last-child{border-bottom:none}
+.edu-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.edu-dot.done{background:#059669}
+.edu-dot.ongoing{background:#2563EB}
+.edu-info{flex:1;min-width:0}
+.edu-title{font-size:14px;font-weight:500;color:var(--tp);line-height:1.3}
+.edu-org{font-size:12px;color:var(--ts);margin-top:2px}
+.edu-badge{display:inline-flex;align-items:center;font-size:10px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;flex-shrink:0}
+.edu-badge.ongoing{background:#EFF6FF;color:#2563EB;border:1px solid rgba(37,99,235,0.2)}
+.edu-badge.done{background:#ECFDF5;color:#059669;border:1px solid rgba(5,150,105,0.2)}
 </style>
 </head>
 <body>
@@ -327,6 +340,67 @@ footer{border-top:1px solid var(--border);padding:28px 40px;display:flex;align-i
         <span class="stack-tag">localStorage</span>
         <span class="stack-tag">HTML/CSS</span>
       </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="education">
+  <div class="section-label" data-pt="Formação & Certificações" data-en="Education & Certifications">Formação & Certificações</div>
+  <div style="display:flex;flex-direction:column;gap:0;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden">
+
+    <div class="edu-row">
+      <div class="edu-dot ongoing"></div>
+      <div class="edu-info">
+        <div class="edu-title" data-pt="Análise e Desenvolvimento de Sistemas" data-en="Systems Analysis and Development">Análise e Desenvolvimento de Sistemas</div>
+        <div class="edu-org">Faculdade</div>
+      </div>
+      <span class="edu-badge ongoing" data-pt="Cursando" data-en="In progress">Cursando</span>
+    </div>
+
+    <div class="edu-row">
+      <div class="edu-dot ongoing"></div>
+      <div class="edu-info">
+        <div class="edu-title" data-pt="GTM Engineer" data-en="GTM Engineer">GTM Engineer</div>
+        <div class="edu-org"></div>
+      </div>
+      <span class="edu-badge ongoing" data-pt="Cursando" data-en="In progress">Cursando</span>
+    </div>
+
+    <div class="edu-row">
+      <div class="edu-dot done"></div>
+      <div class="edu-info">
+        <div class="edu-title">Introduction to Agent Skills</div>
+        <div class="edu-org">Anthropic · Abr 2026</div>
+      </div>
+      <span class="edu-badge done" data-pt="Concluído" data-en="Completed">Concluído</span>
+    </div>
+
+    <div class="edu-row">
+      <div class="edu-dot done"></div>
+      <div class="edu-info">
+        <div class="edu-title" data-pt="Introdução ao Customer Success" data-en="Introduction to Customer Success">Introdução ao Customer Success</div>
+        <div class="edu-org">RD University · Set 2025</div>
+      </div>
+      <span class="edu-badge done" data-pt="Concluído" data-en="Completed">Concluído</span>
+    </div>
+
+    <div class="edu-row">
+      <div class="edu-dot done"></div>
+      <div class="edu-info">
+        <div class="edu-title">Customer Success</div>
+        <div class="edu-org">Rock University · Mar 2023</div>
+      </div>
+      <span class="edu-badge done" data-pt="Concluído" data-en="Completed">Concluído</span>
+    </div>
+
+    <div class="edu-row" style="border-bottom:none">
+      <div class="edu-dot done"></div>
+      <div class="edu-info">
+        <div class="edu-title" data-pt="Capacitação em Pré-Venda" data-en="Pre-Sales Training">Capacitação em Pré-Venda</div>
+        <div class="edu-org">Exact Sales · Abr 2022</div>
+      </div>
+      <span class="edu-badge done" data-pt="Concluído" data-en="Completed">Concluído</span>
     </div>
 
   </div>
